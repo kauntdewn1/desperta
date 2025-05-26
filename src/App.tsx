@@ -207,12 +207,11 @@ function App() {
                   "Acordar o corpo é fácil.<br />
                   Despertar o que te move é outra história."
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed font-light text-center">
-                  Na Desperta, acreditamos que a transformação real acontece quando corpo, mente e emoção se encontram no mesmo movimento. É sobre se conectar com você, com o agora e com quem está do seu lado.
-                </p>
-                <p className="text-base text-gray-700 leading-relaxed font-light text-center">
-                  A Desperta nasceu da união de duas potências: Bianca e Jana. Mulheres que vivem o movimento, entendem de corpo e sentem de verdade. A missão delas? Criar um espaço onde suar, sorrir e silenciar sejam parte da mesma jornada.
-                </p>
+                <div className="bg-primary-50/80 border-l-4 border-primary-500 rounded-xl p-4 my-4 shadow-md">
+                  <p className="text-base text-gray-700 leading-relaxed font-light text-center">
+                    A Desperta nasceu da união de duas potências: Bianca e Jana. Mulheres que vivem o movimento, entendem de corpo e sentem de verdade. A missão delas? Criar um espaço onde suar, sorrir e silenciar sejam parte da mesma jornada.
+                  </p>
+                </div>
                 <p className="text-lg text-primary-600 font-medium text-center">
                   Somos mais que treino. Somos presença em estado bruto.
                 </p>
@@ -222,11 +221,19 @@ function App() {
                 </p>
               </div>
             </div>
-            <img
-              src="/capa 2 copiar 2.png"
-              alt="Capa Desperta"
-              className="w-full max-w-xs md:max-w-sm lg:max-w-md rounded-lg shadow-lg object-cover"
-            />
+            <div className="relative w-full max-w-xs md:max-w-sm lg:max-w-md">
+              <img
+                src="/capa 2 copiar 2.png"
+                alt="Capa Desperta"
+                className="w-full rounded-lg shadow-lg drop-shadow-4xl object-cover"
+              />
+              <img
+                src="/girl_.png"
+                alt="Desperta Girl"
+                className="absolute top-0 right-[-270px] w-120 md:w-124 z-20 pointer-events-none select-none animate-[float_3s_ease-in-out_infinite]"
+                style={{ transform: 'translateY(-10%)' }}
+              />
+            </div>
           </div>
         </section>
 
